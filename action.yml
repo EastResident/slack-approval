@@ -1,4 +1,4 @@
-name: tigerwest/slack-approval
+name: eastresident/slack-approval
 description: Custom action to send approval request to Slack from Github, allowing only specified approvers
 author: Beom
 runs:
@@ -40,5 +40,3 @@ outputs:
     description: slack main message ts
   replyMessageTs:
     description: slack reply message ts
-  
-  

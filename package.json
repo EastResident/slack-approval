@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && ncc build lib/index.js",
     "watch": "tsc -w"
   },
   "author": "",

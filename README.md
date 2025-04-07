@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: send approval
-        uses: TigerWest/slack-approval@v1.0.1
+        uses: EastResident/slack-approval@v1.0.1
         env:
           SLACK_APP_TOKEN: ${{ secrets.SLACK_APP_TOKEN }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
@@ -134,5 +134,4 @@ jobs:
   - Timestamp of the main message sent to Slack
 
 - `replyMessageTs`
-  - Timestamp of the reply message sent to Slack 
-
+  - Timestamp of the reply message sent to Slack

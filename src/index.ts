@@ -84,15 +84,7 @@ async function run(): Promise<void> {
                 },
                 {
                   type: "mrkdwn",
-                  text: `*GITHUB_RUN_ID:*\n${run_id}`,
-                },
-                {
-                  type: "mrkdwn",
                   text: `*Workflow:*\n${workflow}`,
-                },
-                {
-                  type: "mrkdwn",
-                  text: `*RunnerOS:*\n${runnerOS}`,
                 },
               ],
             },
@@ -104,9 +96,7 @@ async function run(): Promise<void> {
         type: "section",
         text: {
           type: "mrkdwn",
-          text: `*Required Approvers Count:* ${minimumApprovalCount}\n*Remaining Approvers:* ${requiredApprovers
-            .map((v) => `<@${v}>`)
-            .join(", ")}\n${
+          text: `*Required Approvers Count:* ${minimumApprovalCount}\n${
             approvers.length > 0
               ? `Approvers: ${approvers.map((v) => `<@${v}>`).join(", ")} `
               : ""
